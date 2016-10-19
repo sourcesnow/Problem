@@ -1,0 +1,7 @@
+1:当使用socket接收tcp/ip报文时(十六进制)，读入缓存区里面，则系统会默认将其转换成十进制数据，所以需要里利用ToString("X2")对其进行转换。
+例如:
+clientsocket.receive(receivebuffer,receivebuffer.length,SocketFlags.None)
+for(int n=0;n<receivebuffer.length;n++)
+{
+List<string> reclist=receivebuffer[n].ToString("X2");
+}
