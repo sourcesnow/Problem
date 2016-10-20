@@ -1,0 +1,9 @@
+1:不同数组形式直接的区别
+
+[] 是针对特定类型、固定长度的。
+List 是针对特定类型、任意长度的。
+Array 是针对任意类型、固定长度的。
+ArrayList 是针对任意类型、任意长度的。
+Array 和 ArrayList 是通过存储 object 实现任意类型的，所以使用时要转换。
+把一个对象数组转换成ArrayList可以使用ArrayList.Adapter方法。这个方法把一个IList包裹在一个ArrayLIst里。
+把一个ArrayList转换成对象数组可以使用ArrayList.ToArray方法。
